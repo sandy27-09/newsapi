@@ -12,6 +12,6 @@ export class ApiService {
 
   public getNews()
   {
-    return this.httpClient.get<any>('https://newsapi.org/v2/top-headlines?sources=techcrunch&apikey=89d157b7298f4318aaa4174fea221a15');
+    return this.httpClient.get<any>('https://newsapi.org/v2/everything?q=tesla&from=2022-12-08&sortBy=publishedAt&apiKey=89d157b7298f4318aaa4174fea221a15');
   }
 }
